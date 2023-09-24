@@ -1,12 +1,16 @@
 import { Outlet } from "react-router-dom";
-import Home from "./Unchange/Home";
+import Footer from "./Footer";
+import Header from "./Unchange/Header";
 
 
 const Mainlayout = () => {
     return (
         <div>
-            <Home></Home>
+           <div className="container mx-auto">
+           <Header></Header>
             <Outlet></Outlet>
+           </div>
+            <Footer></Footer>
             
         </div>
     );
